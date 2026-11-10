@@ -1,0 +1,128 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  color: #17324d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width: 1366px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+}
+.site-header {
+  height: 105px;
+  padding: 0 70px;
+  background: #102f4d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { font-size: 38px; font-weight: 700; letter-spacing: 1px; }
+.plane { display: inline-block; margin-left: 12px; font-size: 34px; transform: rotate(-12deg); }
+nav { display: flex; gap: 34px; }
+nav a { color: #fff; text-decoration: none; font-size: 20px; }
+nav a:hover { text-decoration: underline; }
+.hero {
+  height: 405px;
+  background-image: url("../images/tropical-beach.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero-copy {
+  position: absolute;
+  right: 70px;
+  top: 72px;
+  width: 390px;
+  color: #102f4d;
+}
+.eyebrow { font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+.hero h1 { font-size: 64px; line-height: .98; margin: 16px 0; }
+.hero-copy p:last-child { font-size: 19px; }
+.booking-section { padding: 28px 46px 38px; background: #f7f8fa; }
+.booking-section h2 { font-size: 29px; margin: 0 0 18px; }
+#travel-tabs { border: 0; background: transparent; padding: 0; }
+#travel-tabs > ul {
+  display: flex;
+  padding: 0;
+  border: 1px solid #c8d1dc;
+  background: #e9eef4;
+  border-radius: 5px 5px 0 0;
+}
+#travel-tabs > ul li { flex: 1; list-style: none; margin: 0; text-align: center; }
+#travel-tabs > ul li a {
+  display: block;
+  padding: 16px 8px;
+  color: #17324d;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+}
+#travel-tabs > ul li.ui-tabs-active a { background: #fff; color: #102f4d; border-bottom: 4px solid #102f4d; }
+.tab-panel { min-height: 155px; padding: 28px 22px; background: #fff; border: 1px solid #d5dce5; }
+.search-form { display: flex; align-items: end; gap: 14px; flex-wrap: wrap; }
+.search-form label { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 170px; font-size: 14px; font-weight: 600; }
+.search-form input, .search-form select {
+  width: 100%; height: 48px; padding: 0 13px; border: 1px solid #c5cfdb;
+  border-radius: 5px; background: #fff; color: #273c50; font-size: 15px;
+}
+.search-button {
+  height: 48px; padding: 0 25px; border: 0; border-radius: 5px;
+  background: #102f4d; color: #fff; font-size: 16px; cursor: pointer;
+}
+.search-button:hover { background: #1c496d; }
+.booking-note { margin: 13px 0 0; color: #667789; font-size: 13px; }
+footer { min-height: 115px; padding: 24px 90px; background: #102f4d; color: #fff; }
+footer p { margin: 0; font-size: 14px; line-height: 1.55; text-align: left; }
+@media (max-width: 1366px) {
+  #wrapper { width: 100%; }
+  .site-header { padding: 0 5%; }
+  .hero-copy { right: 5%; }
+}
+@media (max-width: 760px) {
+  .site-header { height: auto; padding: 22px; align-items: flex-start; flex-direction: column; gap: 18px; }
+  .brand { font-size: 28px; }
+  nav { gap: 18px; flex-wrap: wrap; }
+  nav a { font-size: 16px; }
+  .hero { height: 330px; background-position: left center; }
+  .hero-copy { top: 35px; right: 20px; width: 48%; }
+  .hero h1 { font-size: 39px; }
+  .booking-section { padding: 24px 18px; }
+  #travel-tabs > ul { flex-wrap: wrap; }
+  #travel-tabs > ul li { flex: 1 1 33%; }
+  .search-form { align-items: stretch; flex-direction: column; }
+  .search-form label { width: 100%; }
+  footer { padding: 22px; }
+}
+
+#travel-tabs > ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+#travel-tabs > ul li.ui-tabs-active {
+  background: #fff;
+}
+
+#travel-tabs > ul li a {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+#travel-tabs > ul li.ui-tabs-active a {
+  background: #fff;
+  color: #102f4d;
+  border-bottom: 4px solid #102f4d;
+}
+

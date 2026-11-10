@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Happy Travel | Demian Diaz, 2026</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header class="site-header">
+      <div class="brand">HAPPY TRAVEL <span class="plane" aria-hidden="true">✈</span></div>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#booking">Destinations</a>
+        <a href="#footer">About</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Tropical beach destination">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+          <h1>Explore<br>the world.</h1>
+          <p>Find a place you'll love.</p>
+        </div>
+      </section>
+
+      <section id="booking" class="booking-section">
+        <h2>Plan your trip</h2>
+        <div id="travel-tabs">
+          <ul>
+            <li><a href="#tab-flights">✈ Flights</a></li>
+            <li><a href="#tab-hotels">▰ Hotels</a></li>
+            <li><a href="#tab-cars">▣ Cars</a></li>
+            <li><a href="#tab-bundles">▤ Bundles</a></li>
+            <li><a href="#tab-cruises">♧ Cruises</a></li>
+          </ul>
+
+          <div id="tab-flights" class="tab-panel">
+            <form class="search-form">
+              <label>From<input type="text" placeholder="Departure city"></label>
+              <label>To<input type="text" placeholder="Destination"></label>
+              <label>Departure<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Time<input type="time"></label>
+              <button type="button" class="search-button">Search flights</button>
+            </form>
+          </div>
+
+          <div id="tab-hotels" class="tab-panel">
+            <form class="search-form">
+              <label>Destination<input type="text" placeholder="City or hotel"></label>
+              <label>Check in<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Check out<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Guests<select><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option></select></label>
+              <button type="button" class="search-button">Search hotels</button>
+            </form>
+          </div>
+
+          <div id="tab-cars" class="tab-panel">
+            <form class="search-form">
+              <label>Pick-up location<input type="text" placeholder="Enter a city"></label>
+              <label>Pick-up date<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Pick-up time<input type="time"></label>
+              <label>Car type<select><option>Any car</option><option>Economy</option><option>SUV</option><option>Luxury</option></select></label>
+              <button type="button" class="search-button">Search cars</button>
+            </form>
+          </div>
+
+          <div id="tab-bundles" class="tab-panel">
+            <form class="search-form">
+              <label>Destination<input type="text" placeholder="Where to?"></label>
+              <label>Departure<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Return<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Travelers<select><option>1 traveler</option><option>2 travelers</option><option>3 travelers</option><option>4 travelers</option></select></label>
+              <button type="button" class="search-button">Find bundles</button>
+            </form>
+          </div>
+
+          <div id="tab-cruises" class="tab-panel">
+            <form class="search-form">
+              <label>Departure port<input type="text" placeholder="Enter a port"></label>
+              <label>Destination<input type="text" placeholder="Where to?"></label>
+              <label>Departure date<input type="text" class="date-field" placeholder="Select date"></label>
+              <label>Duration<select><option>Any duration</option><option>3–5 nights</option><option>6–8 nights</option><option>9+ nights</option></select></label>
+              <button type="button" class="search-button">Search cruises</button>
+            </form>
+          </div>
+        </div>
+        <p class="booking-note">Choose a travel option above to begin planning.</p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>© 2026, Demian Diaz. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
